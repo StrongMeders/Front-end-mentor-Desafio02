@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="cartao">
+        0000 0000 0000 0000 Jane Appleseed 00/00 000
+      </div>
+
+      <div id="form">
+
+        <div class="coluna">
+          <label>Cardholder Name</label>
+          <input required="required" type="name" name="nome" maxlength="63" placeholder="e.g. Jane Appleseed" />
+          <p></p>
+
+          <label>Card Number</label>
+          <input required="required" type="text" name="card-number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" />
+          <p></p>
+        </div>
+
+        <div id="coluna-dupla">
+          <div id="coluna1">
+              <label class="coluna">Exp. Date (MM/YY)</label>
+              <input required="required" type="text" maxlength="2" name="mounth" placeholder="MM" />
+              <input required="required" type="text" maxlength="2" name="year" placeholder="YY" />
+            <p>a</p>
+          </div>
+
+          <div id="coluna2">
+            <label class="coluna">CVC</label>
+            <input required="required" type="text" name="cvv" maxlength="3" placeholder="e.g. 123" />
+            <p>a</p>
+          </div>
+        </div>
+
+        <input type="submit" value="Confirm" />
+
+      </div>
+    </div>
+    <!-- Completed state start 
+
+  Thank you!
+  We've added your card details
+  Continue
+  -->
+  <!--  <footer>
+
+      <div class="footer">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://github.com/StrongMeders" target="_blank">StrongMeders</a>.
+      </div>
+
+    </footer>
+-->
+  </body>
+</html>

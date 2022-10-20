@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+   box-sizing: border-box; 
+   overflow: hidden;
+}
+
+/*Body*/
+body{
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size:  30.5vw;
+}
+
+#container{
+    display: flex;
+    flex-direction: row wrap;
+}
+
+/*Cartão*/
+#cartao {
+    height: 98vh;
+    width: 55vw;
+}
+
+/*Form*/
+#form{
+    height: 45vw;
+    flex: 45vw;
+    padding-top: 10.7vw;
+    padding-left: 4vh;
+}
+
+#form p{
+    font-size: 1.75vh;
+    margin: 0;
+}
+
+#form label {
+    letter-spacing: 0.2vh;
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-size: 1.75vh;
+    padding-bottom: 0.7vw;
+}
+
+#form input{
+    font-family: 'Space Grotesk';
+    color: hsl(278, 68%, 11%);
+    font-size: 2.7vh;
+    border: hsl(270, 3%, 87%) solid 0.01vh;
+    padding-left: 2vh;
+    height: 7vh;
+    border-radius: 1.15vh;
+}
+
+#form input::placeholder{
+    font-size: 2.7vh;
+    color: hsl(279, 6%, 80%);
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.3vw;
+}
+
+.coluna p{
+    padding: 1vh 0 2.5vh 0;
+}
+
+.coluna input{
+    flex-direction: column;
+    width: 56.5vh;
+    font-family: 'Space Grotesk'
+}
+
+#coluna-dupla{
+    display: flex;
+    flex-direction: row;
+}
+
+#coluna-dupla p {
+    padding-top: 1vh;
+}
+
+#coluna1 {
+    flex-direction: row;
+    padding-right: 3vh;
+}
+
+#coluna1 input{
+    font-family: 'Space Grotesk';
+    width: 12vh;
+}
+
+#coluna2 input{
+    font-family: 'Space Grotesk';
+    width: 29.1vh;
+}
+
+#form [type=submit]{
+    font-family: 'Space Grotesk';
+    height: 7.5vh;
+    width: 56.5vh;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+    font-size: 2.5vh;
+    border: none;
+    cursor: pointer;
+}
+
+/*Footer*/
+.footer {
+    font-size: 11px;
+    text-align: center;
+    background-color: rgb(127, 255, 212);
+}
+
+.footer a {
+    color: hsl(228, 45%, 44%);
+}
