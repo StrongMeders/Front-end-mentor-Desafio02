@@ -17,35 +17,52 @@
       </div>
 
       <div id="form">
+        <form>
 
-        <div class="coluna">
-          <label>Cardholder Name</label>
-          <input required="required" type="name" name="nome" maxlength="63" placeholder="e.g. Jane Appleseed" />
-          <p></p>
+          <div id="coluna">
+            <div id="name">
+              <label>Cardholder Name</label><br>
+              <input required="required" type="name" name="nome" maxlength="63" placeholder="e.g. Jane Appleseed" />
+              <p></p>
+            </div>
 
-          <label>Card Number</label>
-          <input required="required" type="text" name="card-number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" />
-          <p></p>
-        </div>
-
-        <div id="coluna-dupla">
-          <div id="coluna1">
-              <label class="coluna">Exp. Date (MM/YY)</label>
-              <input required="required" type="text" maxlength="2" name="mounth" placeholder="MM" />
-              <input required="required" type="text" maxlength="2" name="year" placeholder="YY" />
-            <p>a</p>
+            <div id="card-number">
+              <label>Card Number</label><br>
+              <input required="required" type="text" name="card-number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" />
+              <p></p>
+            </div>
           </div>
 
-          <div id="coluna2">
-            <label class="coluna">CVC</label>
-            <input required="required" type="text" name="cvv" maxlength="3" placeholder="e.g. 123" />
-            <p>a</p>
+          <div id="coluna-dupla">
+            <div id="coluna1">
+              <label>Exp. Date (MM/YY)</label>
+              <div id="date">
+
+                <div id="mm">
+                  <input required="required" type="text" maxlength="2" name="mounth" placeholder="MM" />
+                </div>
+
+                <div id="yy">
+                  <input required="required" type="text" maxlength="2" name="year" placeholder="YY" />
+                </div>
+              </div>
+              <p></p>
+            </div>
+
+            <div id="coluna2">
+              <div id="cvc">
+                <label>CVC</label><br>
+                <input required="required" type="text" name="cvv" maxlength="3" placeholder="e.g. 123" />
+                <p></p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <input type="submit" value="Confirm" />
-
+          <div id="submit">
+            <input type="submit" value="Confirm" />
+          </div>
+        </form>
       </div>
+
     </div>
     <!-- Completed state start 
 

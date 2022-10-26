@@ -1,115 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
 *{
-   box-sizing: border-box; 
-   overflow: hidden;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
 /*Body*/
 body{
-    margin: 0;
-    font-family: 'Space Grotesk', sans-serif;
+    height: 100vh;
+    font-family: 'Space Grotesk';
+    overflow: hidden;
     background-image: url(../images/bg-main-desktop.png);
     background-repeat: no-repeat;
-    background-size:  30.5vw;
+    background-size: 60vh;
 }
 
 #container{
     display: flex;
-    flex-direction: row wrap;
+    margin: 13vh 10vw;
 }
 
-/*Cartão*/
-#cartao {
-    height: 98vh;
-    width: 55vw;
-}
-
-/*Form*/
-#form{
-    height: 45vw;
-    flex: 45vw;
-    padding-top: 10.7vw;
-    padding-left: 4vh;
-}
-
-#form p{
-    font-size: 1.75vh;
-    margin: 0;
-}
-
-#form label {
-    letter-spacing: 0.2vh;
-    color: hsl(278, 68%, 11%);
-    text-transform: uppercase;
-    font-size: 1.75vh;
-    padding-bottom: 0.7vw;
-}
-
-#form input{
-    font-family: 'Space Grotesk';
-    color: hsl(278, 68%, 11%);
-    font-size: 2.7vh;
-    border: hsl(270, 3%, 87%) solid 0.01vh;
-    padding-left: 2vh;
+#container input {
     height: 7vh;
-    border-radius: 1.15vh;
+    font-family: 'Space Grotesk';
+    border: 0.3vh solid hsl(270, 3%, 87%);
+    color: hsl(278, 68%, 11%);
+    font-size: 2.6vh;
+    padding-left: 1vw;
+    border-radius: 1vh;
 }
 
-#form input::placeholder{
-    font-size: 2.7vh;
-    color: hsl(279, 6%, 80%);
+#container input::placeholder{
+    color: hsl(278, 68%, 11%);
 }
 
-.coluna{
-    display: flex;
+#container input:focus {
+    border: 0.3vh solid hsl(278, 68%, 11%);
+}
+
+#container label {
+    font-family: 'Space Grotesk';
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+    font-size: 1.9vh;
+    letter-spacing: 0.075vw;
+    padding-bottom: 1vh;
+}
+
+#coluna label{
+    padding-bottom: 1vh;
+}
+
+#container #cartao {
+    flex: 50%;
+    border: 2px black solid;
+}
+
+#container #form{
+    flex: 50%;
+    border: 2px black solid;
+}
+
+#container form {
+    width: 30.5vw;
+    border: 2px black solid;
+}
+
+#coluna #name input, #card-number input {
+    width: 30vw;
+}
+
+#coluna input {
+    margin-bottom: 3vh;
+}
+
+
+#coluna input, #coluna label {
     flex-direction: column;
-    padding-bottom: 0.3vw;
 }
 
-.coluna p{
-    padding: 1vh 0 2.5vh 0;
-}
-
-.coluna input{
-    flex-direction: column;
-    width: 56.5vh;
-    font-family: 'Space Grotesk'
-}
-
-#coluna-dupla{
+#coluna-dupla, #coluna1, #coluna2 {
     display: flex;
-    flex-direction: row;
 }
 
-#coluna-dupla p {
-    padding-top: 1vh;
+#coluna-dupla #coluna1 input {
+    width: 6vw;
+}
+
+#coluna-dupla {
+    flex: 100%;
+    height: 10vh;
+    margin-bottom: 6vh;
 }
 
 #coluna1 {
-    flex-direction: row;
-    padding-right: 3vh;
+    display: flex;
+    flex-direction: column;
 }
 
-#coluna1 input{
-    font-family: 'Space Grotesk';
-    width: 12vh;
+#date {
+    display: flex;
 }
 
-#coluna2 input{
-    font-family: 'Space Grotesk';
-    width: 29.1vh;
+#mm {
+    margin-right: 0.8vw;
 }
 
-#form [type=submit]{
-    font-family: 'Space Grotesk';
-    height: 7.5vh;
-    width: 56.5vh;
+#yy {
+    margin-right: 1.5vw;
+}
+
+#cvc input{
+    width: 15.7vw;
+}
+
+#submit {
+    flex: 100%;
+}
+
+#submit input{
+    width: 30vw;
+    height: 7.8vh;
     background-color: hsl(278, 68%, 11%);
     color: hsl(270, 3%, 87%);
-    font-size: 2.5vh;
     border: none;
-    cursor: pointer;
 }
 
 /*Footer*/
