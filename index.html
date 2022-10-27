@@ -14,14 +14,33 @@
     <div id="container">
       <div id="cartao">
 
-        <div id="pt-frente">
-          0000 0000 0000 0000 Jane Appleseed 00/00
-        </div>
-        
-        <div id="pt-tras">
-          000
-        </div>
-        
+        <div class="cc-info">
+          <div id="cc-logo">
+            <img src="./images/card-logo.svg" alt="card logo">
+          </div>
+
+          <div id="front">
+            <img src="./images/bg-card-front.png" alt="card front">
+            
+            <div class="cc-number"> 0000 0000 0000 0000</div>
+
+            <div class="cc-holder">
+              <div class="value">Jane Appleseed</div>
+            </div>
+
+            <div class="cc-expiration">
+              <div class="value">00/00</div>
+            </div>
+          </div>
+
+          <div id="back">
+            <img src="./images/bg-card-back.png" alt="card back">
+
+            <div class="cc-security">
+              <div class="value">000</div>
+            </div>
+          </div>
+
       </div>
 
       <div id="form" onsubmit="submited()">
@@ -90,5 +109,6 @@
 
     </footer>
 -->
+  <script type="module" src="/src/main.js"></script>
   </body>
 </html>

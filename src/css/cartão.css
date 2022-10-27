@@ -1,0 +1,74 @@
+.cc-info {
+    margin-bottom: 30vh;
+}
+
+.cc-info #cc-logo {
+    position: relative;
+    top: 12vh;
+    left: 5vh;
+}
+
+.cc-info #cc-logo img {
+    height: 7vh;
+}
+
+/*card front*/
+.cc-info{
+    position: relative;
+    color: hsl(0, 0%, 100%);
+}
+
+.cc-info #front {
+    height: 34vh;
+}
+
+.cc-info #front img {
+    border-radius: 0.8vh;
+    height: 34vh;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+#front .cc-number {
+    position: relative;
+    font-size: 3.85vh;
+    letter-spacing: 0.3vw;  
+    top: -16vh;
+    left: 1.9vw;
+}
+
+#front .cc-holder {
+    position: relative;
+    font-size: 2vh;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    top: -12vh;
+    left: 1.9vw;
+}
+
+#front .cc-expiration {
+    position: relative;
+    font-size: 2vh;
+    letter-spacing: 0.1vw;
+    top: -15vh;
+    left: 24vw;
+}
+
+/*card back*/
+.cc-info #back {
+    margin: 5vh 0vw 0vh 9vw;
+    height: 34vh;
+}
+
+.cc-info #back img {
+    border-radius: 0.8vh;
+    height: 34vh;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+#back .cc-security {
+    position: relative;
+    font-size: 2vh;
+    letter-spacing: 0.1vw;
+    top: -19.5vh;
+    left: 24vw;
+}

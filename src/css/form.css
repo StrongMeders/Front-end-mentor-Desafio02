@@ -1,38 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/*Body*/
-body{
-    height: 100vh;
-    font-family: 'Space Grotesk';
-    overflow: hidden;
-    background-image: url(../images/bg-main-desktop.png);
-    background-repeat: no-repeat;
-    background-size: 60vh;
-}
-
-#container{
-    display: flex;
-    margin: 13vh 10vw;
-}
-
-#container #cartao {
+#container #form {
     flex: 50%;
-    border: 2px black solid;
-}
-
-#container #form{
-    flex: 50%;
-    border: 2px black solid;
 }
 
 #container form {
-    margin: 10vh 0vw 0vh 6.5vw;
+    margin: 16vh 5vw 0vh 0vw;
     height: 70vh;
     width: 30.5vw;
 }
@@ -56,12 +27,12 @@ body{
     margin-top: 1vh;
 }
 
-#container input::placeholder{
+#container input::placeholder {
     color: hsl(270, 3%, 87%);
 }
 
 #container input:focus {
-    border: 0.3vh solid hsl(278, 68%, 11%);
+    outline: 0.3vh solid hsl(278, 68%, 11%);
 }
 
 /*coluna*/
@@ -69,7 +40,7 @@ body{
     flex-direction: column;
 }
 
-#coluna label{
+#coluna label {
     color: hsl(278, 68%, 11%);
 }
 
@@ -114,7 +85,7 @@ body{
     margin-right: 1.5vw;
 }
 
-#cvc input{
+#cvc input {
     width: 14.76vw;
 }
 
@@ -125,21 +96,10 @@ body{
     margin-top: 4vh;
 }
 
-#submit input{
+#submit input {
     width: 29vw;
     height: 8vh;
     background-color: hsl(278, 68%, 11%);
     color: hsl(270, 3%, 87%);
     border: none;
-}
-
-/*Footer*/
-.footer {
-    font-size: 11px;
-    text-align: center;
-    background-color: rgb(127, 255, 212);
-}
-
-.footer a {
-    color: hsl(228, 45%, 44%);
 }

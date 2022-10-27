@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url(./form.css);
+@import url(./cartão.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Body*/
+body{
+    height: 100vh;
+    font-family: 'Space Grotesk';
+    overflow: hidden;
+    background-image: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/*Container*/
+
+#container {
+    display: flex;
+    margin: 5vh 8vw;
+}
+
+/*Cartão*/
+
+#container #cartao {
+    display: flex;
+    flex: 50%;
+}
+
+#container #cartao .cc-info {
+    flex: 100%;
+}
+
+
+
+/*Footer*/
+.footer {
+    font-size: 11px;
+    text-align: center;
+    background-color: rgb(127, 255, 212);
+}
+
+.footer a {
+    color: hsl(228, 45%, 44%);
+}
