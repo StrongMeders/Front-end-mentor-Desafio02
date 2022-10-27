@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
 
 *{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /*Body*/
@@ -21,37 +21,6 @@ body{
     margin: 13vh 10vw;
 }
 
-#container input {
-    height: 7vh;
-    font-family: 'Space Grotesk';
-    border: 0.3vh solid hsl(270, 3%, 87%);
-    color: hsl(278, 68%, 11%);
-    font-size: 2.6vh;
-    padding-left: 1vw;
-    border-radius: 1vh;
-}
-
-#container input::placeholder{
-    color: hsl(270, 3%, 87%);
-}
-
-#container input:focus {
-    border: 0.3vh solid hsl(278, 68%, 11%);
-}
-
-#container label {
-    font-family: 'Space Grotesk';
-    text-transform: uppercase;
-    color: hsl(278, 68%, 11%);
-    font-size: 1.9vh;
-    letter-spacing: 0.075vw;
-    padding-bottom: 1vh;
-}
-
-#coluna label{
-    padding-bottom: 1vh;
-}
-
 #container #cartao {
     flex: 50%;
     border: 2px black solid;
@@ -63,38 +32,72 @@ body{
 }
 
 #container form {
+    margin: 10vh 0vw 0vh 6.5vw;
+    height: 70vh;
     width: 30.5vw;
-    border: 2px black solid;
 }
 
-#coluna #name input, #card-number input {
-    width: 30vw;
+#container label {
+    font-family: 'Space Grotesk';
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+    font-size: 1.9vh;
+    letter-spacing: 0.075vw;
+}
+
+#container input {
+    height: 7vh;
+    font-family: 'Space Grotesk';
+    border: 0.3vh solid hsl(270, 3%, 87%);
+    color: hsl(278, 68%, 11%);
+    font-size: 2.6vh;
+    padding-left: 1vw;
+    border-radius: 1vh;
+    margin-top: 1vh;
+}
+
+#container input::placeholder{
+    color: hsl(270, 3%, 87%);
+}
+
+#container input:focus {
+    border: 0.3vh solid hsl(278, 68%, 11%);
+}
+
+/*coluna*/
+#coluna {
+    flex-direction: column;
+}
+
+#coluna label{
+    color: hsl(278, 68%, 11%);
 }
 
 #coluna input {
     margin-bottom: 3vh;
+    width: 29vw;
 }
 
-
-#coluna input, #coluna label {
-    flex-direction: column;
-}
-
-#coluna-dupla, #coluna1, #coluna2 {
-    display: flex;
+/*coluna-dupla*/
+#coluna-dupla {
+    flex: 100%;
+    height: 12vh;
 }
 
 #coluna-dupla #coluna1 input {
     width: 6vw;
 }
 
-#coluna-dupla {
-    flex: 100%;
-    height: 10vh;
-    margin-bottom: 6vh;
+#coluna-dupla, #coluna1, #coluna2 {
+    display: flex;
 }
 
 #coluna1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#coluna2 {
     display: flex;
     flex-direction: column;
 }
@@ -112,16 +115,19 @@ body{
 }
 
 #cvc input{
-    width: 15.7vw;
+    width: 14.76vw;
 }
+
+/*subimit*/
 
 #submit {
     flex: 100%;
+    margin-top: 4vh;
 }
 
 #submit input{
-    width: 30vw;
-    height: 7.8vh;
+    width: 29vw;
+    height: 8vh;
     background-color: hsl(278, 68%, 11%);
     color: hsl(270, 3%, 87%);
     border: none;

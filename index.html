@@ -16,7 +16,7 @@
         0000 0000 0000 0000 Jane Appleseed 00/00 000
       </div>
 
-      <div id="form">
+      <div id="form" onsubmit="submited()">
         <form>
 
           <div id="coluna">
@@ -36,8 +36,8 @@
           <div id="coluna-dupla">
             <div id="coluna1">
               <label>Exp. Date (MM/YY)</label>
-              <div id="date">
 
+              <div id="date">
                 <div id="mm">
                   <input required="required" type="text" maxlength="2" name="mounth" placeholder="MM" />
                 </div>
@@ -46,12 +46,14 @@
                   <input required="required" type="text" maxlength="2" name="year" placeholder="YY" />
                 </div>
               </div>
+
               <p></p>
             </div>
 
             <div id="coluna2">
+              
+              <label>CVC</label>
               <div id="cvc">
-                <label>CVC</label><br>
                 <input required="required" type="text" name="cvv" maxlength="3" placeholder="e.g. 123" />
                 <p></p>
               </div>
