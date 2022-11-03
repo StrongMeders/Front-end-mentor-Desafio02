@@ -29,7 +29,9 @@
             </div>
 
             <div class="cc-expiration">
-              <div class="value">00/00</div>
+              <div class="mounth">00</div>
+              <div >/</div>
+              <div class="year">00</div>
             </div>
           </div>
 
@@ -49,11 +51,11 @@
           <div id="coluna">
             <div id="name">
               <label>Cardholder Name</label><br>
-              <input required="required" type="name" name="nome" maxlength="63" placeholder="e.g. Jane Appleseed" />
+              <input id="card-holder" required="required" maxlength="32" placeholder="e.g. Jane Appleseed" />
               <p></p>
             </div>
 
-            <div id="card-number">
+            <div id="_card-number">
               <label>Card Number</label><br>
               <input id="card-number" required="required" placeholder="e.g. 1234 5678 9123 0000" />
               <p></p>
@@ -66,11 +68,11 @@
 
               <div id="date">
                 <div id="mm">
-                  <input required="required" type="text" maxlength="2" name="mounth" placeholder="MM" />
+                  <input id="mounth" required="required" placeholder="MM" />
                 </div>
 
                 <div id="yy">
-                  <input required="required" type="text" maxlength="2" name="year" placeholder="YY" />
+                  <input id="year" required="required" name="year" placeholder="YY" />
                 </div>
               </div>
 

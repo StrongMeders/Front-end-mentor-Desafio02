@@ -46,6 +46,7 @@
 }
 
 #front .cc-expiration {
+    display: flex;
     position: relative;
     font-size: 2vh;
     letter-spacing: 0.1vw;
