@@ -1,0 +1,41 @@
+
+#complete {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    text-align: center;
+    margin-top: 22vh;
+    margin-right: 5vw;
+}
+
+#img img {
+    width: 6vw;
+}
+
+#complete .text {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    letter-spacing: 0.1vw;
+}
+
+#complete .text h2 {
+    color: hsl(278, 68%, 11%);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 4vh;
+    letter-spacing: 0.3vw;
+}
+
+#complete .text p {
+    font-size: 2.3vh;
+    color: hsl(279, 6%, 55%);
+}
+
+#button input {
+    width: 29vw;
+    height: 8vh;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(270, 3%, 87%);
+    border: none;
+}

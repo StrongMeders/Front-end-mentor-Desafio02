@@ -37,6 +37,7 @@
 }
 
 #front .cc-holder {
+    width: 20vw;
     position: relative;
     font-size: 2vh;
     text-transform: uppercase;
@@ -46,6 +47,7 @@
 }
 
 #front .cc-expiration {
+    width: 10vw;
     display: flex;
     position: relative;
     font-size: 2vh;
@@ -67,6 +69,7 @@
 }
 
 #back .cc-security {
+    width: 10vw;
     position: relative;
     font-size: 2vh;
     letter-spacing: 0.1vw;
