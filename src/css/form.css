@@ -1,10 +1,9 @@
 #container #form {
-    flex: 50%;
+    padding: 16vh 2.5vw 40vh 2.5vw;
 }
 
 #container form {
-    margin: 16vh 5vw 0vh 0vw;
-    height: 70vh;
+    height: 55vh;
     width: 30.5vw;
 }
 
