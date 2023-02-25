@@ -15,5 +15,5 @@ function completeSubmit() {
       `
   }
     function addCard() {
-    document.querySelector('#form').innerHTML  = completeSubmit()
+    document.querySelector('form').innerHTML  = completeSubmit()
   }
